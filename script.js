@@ -8,12 +8,12 @@ async function selectMediaStream() {
         videoElement.srcObject = mediaStream;
         videoElement.onloadedmetadata = () => {
             videoElement.play();
-        }
+        };
     } catch(error) {
         // Catch error
         console.log('whoops, error here!', error)
     }
-}
+};
 
 button.addEventListener('click', async () => {
     // disable button
